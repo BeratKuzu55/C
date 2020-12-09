@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1604596716 source:c:\users\berat\desktop\c dersleri btu\9-sayitahmin\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
