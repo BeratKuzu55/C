@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1607732369 source:c:\users\berat\desktop\c dersleri btu\kokbulma\0002\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
