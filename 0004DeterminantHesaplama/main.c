@@ -76,15 +76,43 @@ int determinant_hesapla9_deger(int n,...)
     return determinant_degeri;
 }
 
+int determinant_hesapla4_deger(int x,int y,int z,int t)
+{
+    int determinant_sonuc=(x*t)-(y*z);
+    return determinant_sonuc;
+}
 
 int main()
 {
-    printf("determinanti hesaplanmak uzere 3*3 tipindeki matrisin elemanlarini giriniz ");
+    tekrar:
+    printf("2*2 tipinde determinant hesabi icin 2 yi 3*3 tipinde determinant hesabi icin 3 u tuslayiniz:");
+    int secim;
+    scanf("%d",&secim);
+    if(secim==2)
+    {
+          printf("determinanti hesaplanmak uzere 2*2 tipindeki matrisin elemanlarini giriniz ");
+          int a,b,c,d;
+          scanf("%d %d %d %d",&a,&b,&c,&d);
+          int sonuc = determinant_hesapla4_deger(a,b,c,d);
+          printf("determinant sonucu : %d",sonuc);
+    }
+    else if(secim==3)
+    {
+        printf("determinanti hesaplanmak uzere 3*3 tipindeki matrisin elemanlarini giriniz ");
     int x1,x2,x3,x4,x5,x6,x7,x8,x9;
     scanf("%d %d %d %d %d %d %d %d %d",&x1,&x2,&x3,&x4,&x5,&x6,&x7,&x8,&x9);
 
     int sonuc = determinant_hesapla9_deger(9,x1,x2,x3,x4,x5,x6,x7,x8,x9);
     printf("determinant sonucu : %d",sonuc);
+    }
+    else
+    {
+        printf("yanlis giris !!! \n");
+        goto tekrar;
+
+    }
+
 
     return 0;
 }
+
