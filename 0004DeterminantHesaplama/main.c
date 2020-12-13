@@ -44,7 +44,7 @@ int determinant_hesapla9_deger(int n,...)
 
      int toplam1=0;
      int A1=1,A2=1,A3=1;
-    for (int i=0,j=0;i<3,j<3;i++,j++)
+    for (int i=0,j=0;i<3&&j<3;i++,j++)
     {
 
          A1=A1*matris_sarrus[i][j];
@@ -59,7 +59,7 @@ int determinant_hesapla9_deger(int n,...)
 
      int toplam2=0;
      int B1=1,B2=1,B3=1;
-    for(int i=0,j=2;i<3,j>-1;i++,j--)
+    for(int i=0,j=2;i<3&&j>-1;i++,j--)
     {
 
         B1=B1*matris_sarrus[i][j];
