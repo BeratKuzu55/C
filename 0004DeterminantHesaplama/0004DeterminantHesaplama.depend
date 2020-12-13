@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1607852797 source:c:\users\berat\desktop\c dersleri btu\0004determinanthesaplama\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+
